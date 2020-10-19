@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    app:cardCornerRadius="@dimen/corner_radius_cardview">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgFotoCvMascota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginLeft="@dimen/margen"
+            android:layout_marginTop="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:layout_marginRight="@dimen/margen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/alegre" />
+
+
+        <ImageButton
+            android:id="@+id/btnLikeCvMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginTop="@dimen/margen"
+            android:layout_marginBottom="@dimen/margen"
+            android:background="#FFFFFF"
+            android:src="@drawable/icon_white_bone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgFotoCvMascota" />
+
+        <TextView
+            android:id="@+id/tvNombreCvMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio"
+            android:layout_marginLeft="@dimen/espacio"
+            android:layout_marginTop="@dimen/margen"
+            android:layout_marginBottom="@dimen/margen"
+            android:text="@string/pnombre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnLikeCvMascota"
+            app:layout_constraintTop_toBottomOf="@id/imgFotoCvMascota" />
+
+        <TextView
+            android:id="@+id/tvLikesCvMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/prating"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvNombreCvMascota"
+            app:layout_constraintEnd_toStartOf="@+id/imgLikesCvMascota" />
+
+        <ImageView
+            android:id="@+id/imgLikesCvMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margen"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="@dimen/margen"
+            android:background="#FFFFFF"
+            android:src="@drawable/icon_yellow_bone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgFotoCvMascota"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+

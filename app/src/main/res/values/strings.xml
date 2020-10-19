@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dogbook</string>
+    <string name="pnombre">nombre</string>
+    <string name="prating">rating</string>
+</resources>
